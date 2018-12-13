@@ -11,6 +11,22 @@ body {
     background-color: #ffffff;
     position: relative;
     height: 105px;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;;
+}
+@-webkit-keyframes example {
+    0%   {background-color: #cccccc;}
+    25%  {background-color: lavenderblush;}
+    50%  {background-color: olive;}
+    100% {background-color: skyblue;}
+  }
+@keyframes example {
+    0%   {background-color: #cccccc;}
+    25%  {background-color: lavenderblush;}
+    50%  {background-color: olive;}
+    100% {background-color: skyblue;}
 }
 .menu_box {
     width: 960px;
